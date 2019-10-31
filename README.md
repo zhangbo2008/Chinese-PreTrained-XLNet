@@ -1,3 +1,57 @@
+下面我用这些权重文件,做文本生成器.写小说啥的.
+chinese_xlnet_mid_L-24_H-768_A-12.zip
+    |- xlnet_model.ckpt      # 模型权重
+    |- xlnet_model.meta      # 模型meta信息
+    |- xlnet_model.index     # 模型index信息
+    |- xlnet_config.json     # 模型参数
+    |- spiece.model          # 词表
+
+
+注意的就是spiece.model 这个文件是词表.
+
+
+
+
+下载模型XLNet-mid 这个效果最好,然后参考run_classifier.py 进行看如何做编码.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [**中文说明**](./README.md) | [**English**](./README_EN.md)
 
 ## 中文XLNet预训练模型（Chinese Pre-Trained XLNet）

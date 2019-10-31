@@ -108,6 +108,22 @@ flags.DEFINE_float("weight_decay", default=0.00, help="Weight decay rate")
 flags.DEFINE_float("adam_epsilon", default=1e-8, help="Adam epsilon")
 flags.DEFINE_string("decay_method", default="poly", help="poly or cos")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------
 # evaluation
 flags.DEFINE_bool("do_eval", default=False, help="whether to do eval")
 flags.DEFINE_bool("do_predict", default=False, help="whether to do prediction")
@@ -894,7 +910,7 @@ def main(_):
     for key, val in sorted(eval_results[0].items(), key=lambda x: x[0]):
       log_str += "{} {} | ".format(key, val)
     tf.logging.info(log_str)
-
+#-------------------------开始predict,也就是最后需要的代码!!!!!!!!!!!!!!
   if FLAGS.do_predict:
     eval_file_base = "{}.len-{}.{}.predict.tf_record".format(
         spm_basename, FLAGS.max_seq_length, FLAGS.eval_split)
